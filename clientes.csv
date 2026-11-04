@@ -1,0 +1,101 @@
+Código,Nome do cliente,Empresa,E-mail,Telefone,Status,"Tempo em negociação (dias, fictício)",Quantidade de contatos realizados (fictício),Dias desde o último contato (fictício),"Valor da proposta (BRL, fictício)",Tornou-se ativo em 30 dias (fictício)
+001,Ana Silva,Aurora Tecnologia,cliente001@example.com,(11) 90000-0001,Ativo,50,4,8,6000,Não se aplica
+002,Bruno Santos,Horizonte Consultoria,cliente002@example.com,(11) 90000-0002,Inativo,99,12,6,57500,Sim
+003,Carla Oliveira,Essência Design,cliente003@example.com,(11) 90000-0003,Em negociação,86,2,8,39250,Não
+004,Diego Costa,Vértice Logística,cliente004@example.com,11900000004,Ativo,98,2,26,11000,Não se aplica
+005,Elisa Pereira,Jardim Comércio,cliente005@example.com,+55 11 90000 0005,Inativo,77,6,5,59750,Não
+006,Felipe Almeida,Nova Rota, CLIENTE006@EXAMPLE.COM ,(11) 90000-0006,Em negociação,37,10,15,26500,Não
+007,  GABRIELA SOUZA  ,Ponto Azul,cliente007@example.com,(11) 90000-0007, ativo ,61,3,6,34500,Não se aplica
+008,Henrique Lima,Sol Nascente,cliente008.example.com,11900000008,ATIVO,58,3,42,22750,Não se aplica
+009,Isabela Rocha,,cliente009@example.com,(11) 90000-0009,Em negociação,11,11,2,7250,Sim
+010,João Martins,Vale Serviços,,+55 11 90000 0010,N/A,90,6,26,41250,Não
+011,karen ribeiro,Aurora Tecnologia,cliente011@example.com,(11) 90000-0011,Em negociacao,66,7,20,28000,Não
+012,Lucas Ferreira,Horizonte Consultoria, CLIENTE012@EXAMPLE.COM ,,Em negociação,92,5,26,39000,Não
+013,Mariana Alves,  Essência Design ,cliente013@example.com,(11) 90000-0013,Inatvo,3,11,1,12250,Sim
+014,  NICOLAS BARROS  ,Vértice Logística,cliente014@example.com,123, ativo ,76,6,4,59750,Não se aplica
+,Olívia Cardoso,Jardim Comércio,cliente015@example.com,+55 11 90000 0015,Em negociação,31,1,0,9000,Não
+16,Pedro Gomes,Nova Rota,cliente016.example.com,11900000016,ATIVO,21,9,0,30000,Não se aplica
+017,Renata Moreira,Ponto Azul,cliente017@@example.com,(11) 90000-0017,Inativo,82,9,0,12250,Sim
+018,Samuel Nunes,, CLIENTE018@EXAMPLE.COM ,(11) 90000-0018,,10,10,6,15750,Não
+018,Tatiana Castro,Conexão Digital,cliente019@example.com,(11) 90000-0019,Ativo,44,10,2,13500,Não se aplica
+020,Vinícius Teixeira,Vale Serviços,,+55 11 90000 0020,N/A,24,10,18,56750,Sim
+021,  ANA SILVA  ,Aurora Tecnologia,cliente021@example.com,(11) 90000-0021, ativo ,101,11,37,5500,Não se aplica
+003,Carla Oliveira,Essência Design,cliente003@example.com,(11) 90000-0003,Em negociação,86,2,8,39250,Não
+023,Carla Oliveira,Essência Design,cliente023@example.com,(11) 90000-0023,Inativo,45,12,42,51500,Sim
+024,Diego Costa,Vértice Logística,cliente024.example.com,,ATIVO,82,11,16,32250,Não se aplica
+025,Elisa Pereira,Jardim Comércio,cliente025@example.com,+55 11 90000 0025,Ativo,37,5,4,13750,Não se aplica
+026,Felipe Almeida,  Nova Rota ,cliente026@example.com,(11) 90000-0026,Inatvo,67,1,5,46250,Sim
+027,Gabriela Souza,,cliente027@example.com,(11) 90000-0027,Em negociação,24,5,22,54500,Sim
+028,  HENRIQUE LIMA  ,Sol Nascente,cliente028@example.com,123, ativo ,85,4,27,51250,Não se aplica
+029,Isabela Rocha,Conexão Digital,cliente029@example.com,(11) 90000-0029,Inativo,96,12,7,38500,Sim
+,João Martins,Vale Serviços,,+55 11 90000 0030,N/A,46,11,42,30750,Não
+031,Karen Ribeiro,Aurora Tecnologia,cliente031@example.com,(11) 90000-0031,Ativo,65,7,27,59750,Não se aplica
+32,Lucas Ferreira,Horizonte Consultoria,cliente032.example.com,11900000032,ATIVO,105,2,18,9250,Não se aplica
+033,mariana alves,Essência Design,cliente033@example.com,(11) 90000-0033,Em negociacao,99,6,3,52000,Sim
+034,Nicolas Barros,Vértice Logística,cliente034@@example.com,(11) 90000-0034,Ativo,45,1,17,9750,Não se aplica
+035,  OLÍVIA CARDOSO  ,Jardim Comércio,cliente035@example.com,+55 11 90000 0035, ativo ,36,8,33,57750,Não se aplica
+036,Pedro Gomes,, CLIENTE036@EXAMPLE.COM ,,,30,11,20,32500,Sim
+037,Renata Moreira,Ponto Azul,cliente037@example.com,(11) 90000-0037,Ativo,42,11,35,47500,Não se aplica
+037,Samuel Nunes,Sol Nascente,cliente038@example.com,(11) 90000-0038,Inativo,74,1,18,16000,Não
+008,Henrique Lima,Sol Nascente,cliente008.example.com,11900000008,ATIVO,58,3,42,22750,Não se aplica
+040,Vinícius Teixeira,Vale Serviços,,+55 11 90000 0040,N/A,33,8,26,9250,Sim
+041,Ana Silva,Aurora Tecnologia,cliente041@example.com,(11) 90000-0041,Inativo,29,1,12,42250,Não
+042,  BRUNO SANTOS  ,Horizonte Consultoria, CLIENTE042@EXAMPLE.COM ,123, ativo ,105,6,29,43250,Não se aplica
+043,Carla Oliveira,Essência Design,cliente043@example.com,(11) 90000-0043,Ativo,13,7,5,11750,Não se aplica
+044,diego costa,Vértice Logística,cliente044@example.com,11900000044,Em negociacao,107,1,8,47250,Não
+,Elisa Pereira,,cliente045@example.com,+55 11 90000 0045,Em negociação,74,4,20,16000,Não
+046,Felipe Almeida,Nova Rota,cliente046@example.com,(11) 90000-0046,Ativo,108,12,20,38000,Não se aplica
+047,Gabriela Souza,Ponto Azul,cliente047@example.com,(11) 90000-0047,Inativo,13,6,7,28750,Sim
+48,Henrique Lima,Sol Nascente,cliente048.example.com,,ATIVO,50,3,2,52000,Não se aplica
+049,  ISABELA ROCHA  ,Conexão Digital,cliente049@example.com,(11) 90000-0049, ativo ,77,4,0,16250,Não se aplica
+050,João Martins,Vale Serviços,,+55 11 90000 0050,N/A,68,7,28,54750,Não
+051,Karen Ribeiro,Aurora Tecnologia,cliente051@@example.com,(11) 90000-0051,Em negociação,31,4,14,14000,Sim
+052,Lucas Ferreira,  Horizonte Consultoria ,cliente052@example.com,11900000052,Inatvo,72,12,14,59500,Não
+053,Mariana Alves,Essência Design,cliente053@example.com,(11) 90000-0053,Inativo,31,11,29,26750,Sim
+054,Nicolas Barros,, CLIENTE054@EXAMPLE.COM ,(11) 90000-0054,,19,2,9,43000,Não
+055,olívia cardoso,Jardim Comércio,cliente055@example.com,+55 11 90000 0055,Em negociacao,10,1,8,31500,Não
+017,Renata Moreira,Ponto Azul,cliente017@@example.com,(11) 90000-0017,Inativo,82,9,0,12250,Sim
+056,Renata Moreira,Ponto Azul,cliente057@example.com,(11) 90000-0057,Em negociação,68,10,37,40250,Não
+058,Samuel Nunes,Sol Nascente,cliente058@example.com,(11) 90000-0058,Ativo,97,11,39,18750,Não se aplica
+059,Tatiana Castro,Conexão Digital,cliente059@example.com,(11) 90000-0059,Inativo,104,8,36,13500,Não
+,Vinícius Teixeira,Vale Serviços,,,N/A,73,9,15,50500,Sim
+061,Ana Silva,Aurora Tecnologia,cliente061@example.com,(11) 90000-0061,Ativo,75,3,37,21750,Não se aplica
+062,Bruno Santos,Horizonte Consultoria,cliente062@example.com,(11) 90000-0062,Inativo,91,1,25,6500,Não
+063,  CARLA OLIVEIRA  ,,cliente063@example.com,(11) 90000-0063, ativo ,72,10,16,12500,Não se aplica
+64,Diego Costa,Vértice Logística,cliente064.example.com,11900000064,ATIVO,52,12,16,52500,Não se aplica
+065,Elisa Pereira,  Jardim Comércio ,cliente065@example.com,+55 11 90000 0065,Inatvo,86,2,21,54000,Não
+066,felipe almeida,Nova Rota, CLIENTE066@EXAMPLE.COM ,(11) 90000-0066,Em negociacao,71,5,19,22250,Sim
+067,Gabriela Souza,Ponto Azul,cliente067@example.com,(11) 90000-0067,Ativo,57,11,26,41750,Não se aplica
+068,Henrique Lima,Sol Nascente,cliente068@@example.com,11900000068,Inativo,26,10,14,49000,Sim
+069,Isabela Rocha,Conexão Digital,cliente069@example.com,(11) 90000-0069,Em negociação,27,2,9,41250,Não
+070,  JOÃO MARTINS  ,Vale Serviços,,123,N/A,16,12,6,22250,Sim
+071,Karen Ribeiro,Aurora Tecnologia,cliente071@example.com,(11) 90000-0071,Inativo,67,3,30,34250,Não
+072,Lucas Ferreira,,cliente072.example.com,,,106,1,3,12000,Sim
+028,  HENRIQUE LIMA  ,Sol Nascente,cliente028@example.com,123, ativo ,85,4,27,51250,Não se aplica
+074,Nicolas Barros,Vértice Logística,cliente074@example.com,(11) 90000-0074,Inativo,45,3,8,41250,Sim
+,Olívia Cardoso,Jardim Comércio,cliente075@example.com,+55 11 90000 0075,Em negociação,31,11,2,46750,Sim
+,Pedro Gomes,Nova Rota,cliente076@example.com,11900000076,Ativo,53,9,20,24250,Não se aplica
+077,  RENATA MOREIRA  ,Ponto Azul,cliente077@example.com,(11) 90000-0077, ativo ,30,6,23,59500,Não se aplica
+078,Samuel Nunes,  Sol Nascente , CLIENTE078@EXAMPLE.COM ,(11) 90000-0078,Inatvo,15,7,11,48250,Sim
+079,Tatiana Castro,Conexão Digital,cliente079@example.com,(11) 90000-0079,Ativo,59,9,1,7750,Não se aplica
+80,Vinícius Teixeira,Vale Serviços,,+55 11 90000 0080,N/A,9,4,8,44250,Não
+081,Ana Silva,,cliente081@example.com,(11) 90000-0081,Em negociação,63,3,43,43750,Sim
+082,Bruno Santos,Horizonte Consultoria,cliente082@example.com,(11) 90000-0082,Ativo,42,7,21,6250,Não se aplica
+083,Carla Oliveira,Essência Design,cliente083@example.com,(11) 90000-0083,Inativo,64,2,35,3500,Não
+084,  DIEGO COSTA  ,Vértice Logística, CLIENTE084@EXAMPLE.COM ,, ativo ,110,9,35,51500,Não se aplica
+085,Elisa Pereira,Jardim Comércio,cliente085@@example.com,+55 11 90000 0085,Ativo,15,7,8,42750,Não se aplica
+086,Felipe Almeida,Nova Rota,cliente086@example.com,(11) 90000-0086,Inativo,68,4,2,41750,Sim
+087,Gabriela Souza,Ponto Azul,cliente087@example.com,(11) 90000-0087,Em negociação,82,4,10,5500,Não
+088,henrique lima,Sol Nascente,cliente088.example.com,11900000088,ATIVO,51,8,31,58000,Não se aplica
+089,Isabela Rocha,Conexão Digital,cliente089@example.com,(11) 90000-0089,Inativo,102,3,43,18750,Não
+041,Ana Silva,Aurora Tecnologia,cliente041@example.com,(11) 90000-0041,Inativo,29,1,12,42250,Não
+091,  KAREN RIBEIRO  ,  Aurora Tecnologia ,cliente091@example.com,(11) 90000-0091, ativo ,81,7,3,59250,Não se aplica
+092,Lucas Ferreira,Horizonte Consultoria,cliente092@example.com,11900000092,Inativo,84,11,14,40750,Sim
+093,Mariana Alves,Essência Design,cliente093@example.com,(11) 90000-0093,Em negociação,57,10,43,42250,Não
+094,Nicolas Barros,Vértice Logística,cliente094@example.com,(11) 90000-0094,Ativo,57,9,27,45750,Não se aplica
+094,Olívia Cardoso,Jardim Comércio,cliente095@example.com,+55 11 90000 0095,Inativo,23,12,13,32750,Sim
+96,Pedro Gomes,Nova Rota,cliente096.example.com,,ATIVO,34,2,23,31500,Não se aplica
+097,Renata Moreira,Ponto Azul,cliente097@example.com,(11) 90000-0097,Ativo,30,8,10,16750,Não se aplica
+098,  SAMUEL NUNES  ,Sol Nascente,cliente098@example.com,123, ativo ,11,4,8,46000,Não se aplica
+099,tatiana castro,,cliente099@example.com,(11) 90000-0099,Em negociacao,86,10,34,46250,Não
+100,Vinícius Teixeira,Vale Serviços,,+55 11 90000 0100,N/A,86,9,24,9500,Não

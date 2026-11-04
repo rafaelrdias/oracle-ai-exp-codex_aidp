@@ -1,0 +1,10 @@
+{
+  "aidpBin": "<CAMINHO_ABSOLUTO_DO_EXECUTAVEL_AIDP>",
+  "configFile": "<CAMINHO_ABSOLUTO_DO_CONFIG_LAB_AIDP>",
+  "profile": "LAB_AIDP",
+  "auth": "api_key",
+  "region": "us-chicago-1",
+  "instanceId": "<OUTPUT_AIDP_INSTANCE_ID>",
+  "workspaceKey": "<WORKSPACE_KEY_REAL>",
+  "clusterKey": "<CLUSTER_KEY_PREENCHIDO_APOS_CRIAR_O_SPARK>"
+}

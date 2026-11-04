@@ -1,0 +1,64 @@
+title: "Laboratório Codex e AIDP — OCI Resource Manager"
+description: "Cria compartment, policies, AIDP e workspace. Lakehouse opcional; Spark configurado depois pelo Codex. Selecione Terraform 1.5.x na stack."
+schemaVersion: 1.1.0
+version: "20261103"
+locale: "en"
+variableGroups:
+  - title: "Configuração do laboratório"
+    variables:
+      - region
+      - lab_name
+      - workspace_name
+      - enable_ai_features
+  - title: "Lakehouse opcional — consome créditos adicionais"
+    visible: "${enable_ai_features}"
+    variables:
+      - lakehouse_database_name
+      - lakehouse_admin_password
+  - title: "Configuração automática"
+    visible: false
+    variables:
+      - tenancy_ocid
+      - iam_wait_seconds
+variables:
+  tenancy_ocid:
+    type: string
+    required: true
+    title: "Tenancy atual"
+  region:
+    type: oci:identity:region:name
+    required: true
+    title: "Região do AIDP (Chicago)"
+    default: "us-chicago-1"
+    description: "Padrão: Chicago (us-chicago-1). A região precisa estar assinada e ter AIDP e quota disponíveis na trial."
+  lab_name:
+    type: string
+    required: true
+    title: "Nome do ambiente descartável"
+    default: "lab-codex-aidp-rm"
+    pattern: "^[a-z][a-z0-9-]{2,39}$"
+  workspace_name:
+    type: string
+    required: true
+    title: "Workspace inicial"
+    default: "lab-validacao"
+  enable_ai_features:
+    type: boolean
+    required: true
+    title: "Criar Lakehouse e habilitar funcionalidades de IA?"
+    description: "Cria Lakehouse com 2 ECPUs e 1 TB de armazenamento. Desnecessário para os três notebooks Spark. Consome créditos adicionais."
+    default: false
+  lakehouse_database_name:
+    type: string
+    title: "Nome do banco Lakehouse"
+    default: "LABAIDP"
+  lakehouse_admin_password:
+    type: password
+    title: "Senha ADMIN do Lakehouse"
+    required: "${enable_ai_features}"
+    confirmation: true
+    sensitive: true
+    description: "Ao menos 12 caracteres, com maiúsculas, minúsculas e números. Não informe a senha da conta OCI."
+  iam_wait_seconds:
+    type: number
+    default: 90

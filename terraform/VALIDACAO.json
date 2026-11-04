@@ -1,0 +1,44 @@
+{
+  "validated_at_utc": "2026-11-03T19:29:22.901070+00:00",
+  "terraform_cli": "1.5.7",
+  "checks": {
+    "terraform_init": "passed",
+    "terraform_validate": "passed",
+    "schema_yaml": "parsed; variables and groups match Terraform inputs",
+    "zip_root_tf_files": true,
+    "local_pem_or_python_dependencies": false,
+    "chicago_default_with_other_iam_home_region": "passed in local-module mocked plan"
+  },
+  "real_resource_manager_plan": false,
+  "real_resource_manager_apply": false,
+  "scope": [
+    "compartment",
+    "service policies",
+    "AIDP instance",
+    "default workspace",
+    "optional Lakehouse 26ai"
+  ],
+  "spark_created": false,
+  "default_deployment_region": "us-chicago-1",
+  "iam_region": "Discovered tenancy home region; not hardcoded",
+  "lakehouse_storage_fix": {
+    "validated_at_utc": "2026-11-03T19:41:59.116351+00:00",
+    "reported_api_error": "Autonomous AI Databases using Lakehouse workloads cannot allocate data storage in GBs.",
+    "previous_setting": {
+      "data_storage_size_in_gb": 32
+    },
+    "corrected_setting": {
+      "data_storage_size_in_tbs": 1
+    },
+    "compute_ecpus": 2,
+    "checks": {
+      "terraform_fmt": "passed",
+      "terraform_validate": "passed",
+      "no_gb_argument_in_main_tf": true,
+      "mock_plan_storage_regression": "passed (trial-aidp; 3 plan cases passed)",
+      "resource_manager_form_1_tb_disclosure": "passed"
+    },
+    "real_oci_apply_after_fix": false,
+    "documentation": "https://docs.oracle.com/en-us/iaas/autonomous-database-serverless/doc/autonomous-compute-models.html"
+  }
+}
