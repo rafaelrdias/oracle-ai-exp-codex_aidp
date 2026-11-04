@@ -40,11 +40,11 @@ O Resource Manager executa o Terraform na OCI. Você não precisa instalar Terra
 | [terraform/](terraform/) | Código legível da infraestrutura e orientação técnica |
 | [clientes.csv](clientes.csv) | Fonte fictícia, com 100 linhas de dados e 11 colunas |
 | [exemplos/ambiente-lab.example.json](exemplos/ambiente-lab.example.json) | Modelo sem dados reais da configuração local |
-| [Resultados esperados](docs/resultados-esperados.md) | Contagens, regras e indicadores de referência |
-| [Solução de problemas](docs/solucao-de-problemas.md) | Diagnóstico de instalação, acesso, execução e dados |
-| [Apresentação convertida](docs/apresentacao-convertida.md) | Conteúdo textual dos 50 slides, na ordem original |
+| [Resultados esperados](resultados-esperados.md) | Contagens, regras e indicadores de referência |
+| [Solução de problemas](solucao-de-problemas.md) | Diagnóstico de instalação, acesso, execução e dados |
+| [Apresentação convertida](apresentacao-convertida.md) | Conteúdo textual dos 50 slides, na ordem original |
 
-As imagens deste tutorial são prints da documentação oficial e mostram ambientes de exemplo. Use os nomes e valores escritos nas etapas. [Fontes das imagens](docs/fontes-das-imagens.md).
+As imagens deste tutorial são prints da documentação oficial e mostram ambientes de exemplo. Use os nomes e valores escritos nas etapas. [Fontes das imagens](fontes-das-imagens.md).
 
 ### O papel de cada componente
 
@@ -144,7 +144,7 @@ Nos detalhes da stack/job de Apply, abra **Outputs** e anote localmente:
 
 Guarde também o nome e o link da stack. Abra a instância `lab-codex-aidp-rm`, confira o estado **ACTIVE** e abra o **Workbench**. Em **Workspaces**, localize `lab-validacao` e confirme o catálogo standard `default`.
 
-![Navegação lateral e workspace no AIDP](docs/imagens/workspace-navegacao.png)
+![Navegação lateral e workspace no AIDP](imagens/workspace-navegacao.png)
 
 *Print de referência da Oracle. Localize o workspace `lab-validacao` criado na sua conta.*
 
@@ -158,7 +158,7 @@ Referência na apresentação: slides 18 a 23.
 
 ### 3.1 Abra o projeto no Codex
 
-1. Instale o aplicativo pelo [download oficial](https://chatgpt.com/download). Abra o aplicativo, entre na sua conta e acesse o Codex. Consulte o [guia oficial do aplicativo](https://learn.chatgpt.com/docs/app) se precisar localizar o acesso.
+1. Instale o aplicativo pelo [download oficial](https://chatgpt.com/download). Abra o aplicativo, entre na sua conta e acesse o Codex. Consulte o [guia oficial do aplicativo](https://learn.chatgpt.com/app) se precisar localizar o acesso.
 2. Use a pasta extraída deste repositório como projeto local, ou copie seu conteúdo para uma pasta `Lab-Codex-AIDP` em Documentos.
 3. Confira que `clientes.csv` está na raiz dessa pasta.
 4. Abra a pasta como projeto no Codex e inicie um chat local.
@@ -197,7 +197,7 @@ Use o fluxo de instalação disponível neste aplicativo.
 Ao concluir, informe como verificar se o plugin está instalado e habilitado.
 ```
 
-O [README oficial do plugin](https://github.com/oracle-samples/oracle-aidp-samples/tree/main/ai/codex-plugins/plugins/ask-aidp) descreve a instalação e as dependências. A [documentação de plugins da OpenAI](https://learn.chatgpt.com/docs/plugins) explica instalação e disponibilidade nas interfaces suportadas.
+O [README oficial do plugin](https://github.com/oracle-samples/oracle-aidp-samples/tree/main/ai/codex-plugins/plugins/ask-aidp) descreve a instalação e as dependências. A [documentação de plugins da OpenAI](https://learn.chatgpt.com/plugins) explica instalação e disponibilidade nas interfaces suportadas.
 
 ### 3.4 Baixe os pacotes Oracle
 
@@ -253,7 +253,7 @@ Referência na apresentação: slides 24 a 26.
 
 Cole no próximo prompt somente o trecho de configuração e o caminho do arquivo. **O conteúdo da chave privada permanece no computador.** O Resource Manager não precisa receber essa chave.
 
-![Janela Add API key no Console OCI](docs/imagens/oci-api-key.png)
+![Janela Add API key no Console OCI](imagens/oci-api-key.png)
 
 *Selecione Generate API key pair e baixe a chave privada antes de concluir o cadastro. O print mostra somente a interface de exemplo.*
 
@@ -332,7 +332,7 @@ Crie ou reutilize um único compute `labspark` no workspace correto:
 | Autoscaling | Desabilitado |
 | Idle timeout | 15 minutos |
 
-![Formulário de configuração de um Spark Compute no AIDP](docs/imagens/spark-configuracao.png)
+![Formulário de configuração de um Spark Compute no AIDP](imagens/spark-configuracao.png)
 
 *O exemplo da Oracle mostra Autoscale de 1 a 10 e timeout de 120 minutos. No workshop, selecione **Static amount = 1**, timeout de **15 minutos** e driver/worker AMD com **2 OCPUs e 32 GB**. Confira também Spark **3.5.0**. Clique na imagem para ampliar se necessário.*
 
@@ -414,13 +414,13 @@ Não crie nem execute os notebooks bronze, prata e ouro nesta etapa.
 Ao concluir, mostre o resultado e aguarde meu próximo prompt.
 ```
 
-**Conferência:** a saída de `SELECT 1 AS teste` contém `teste = 1`. O CSV contém 100 linhas de dados, além do cabeçalho, e os 11 campos listados na [referência de dados](docs/resultados-esperados.md).
+**Conferência:** a saída de `SELECT 1 AS teste` contém `teste = 1`. O CSV contém 100 linhas de dados, além do cabeçalho, e os 11 campos listados na [referência de dados](resultados-esperados.md).
 
 O notebook `00_verificacao.ipynb`, se necessário, é auxiliar. Os três notebooks do pipeline começam na etapa 6.4.
 
 ### 6.3 Crie os destinos e envie o CSV
 
-![Formulário de criação de volume managed no AIDP](docs/imagens/volume-managed.png)
+![Formulário de criação de volume managed no AIDP](imagens/volume-managed.png)
 
 *Print de referência. O prompt cria ou reutiliza o volume managed `entrada` em `default.lab_clientes`. Confira esse destino no Workbench.*
 
@@ -622,7 +622,7 @@ flowchart LR
     P -->|sucesso| O[ouro: 03_ouro.ipynb]
 ```
 
-![Criação de job no Workflows do AIDP](docs/imagens/workflow-criacao.png)
+![Criação de job no Workflows do AIDP](imagens/workflow-criacao.png)
 
 *Print de referência da criação de um job. No exercício, use `job_clientes` e selecione `labspark` nas tarefas.*
 
@@ -650,11 +650,11 @@ Ao concluir, mostre o resultado e aguarde meu próximo prompt.
 
 Confira os detalhes de cada tarefa na interface:
 
-![Detalhes de uma tarefa notebook em um workflow](docs/imagens/workflow-tarefas.png)
+![Detalhes de uma tarefa notebook em um workflow](imagens/workflow-tarefas.png)
 
 *No exemplo aparecem `Bronze_1` e `Medallion_Compute`. Para este workshop, a tarefa `bronze` usa `/Workspace/Shared/lab_clientes/01_bronze.ipynb` e o compute `labspark`. Configure `prata` e `ouro` com seus respectivos notebooks.*
 
-![Campos de dependência e condição de execução de tarefa](docs/imagens/workflow-dependencias.png)
+![Campos de dependência e condição de execução de tarefa](imagens/workflow-dependencias.png)
 
 *O print usa `Silver_1` como exemplo. Neste workshop, `prata` depende de `bronze` e `ouro` depende de `prata`, com a condição de que todas as dependências tenham terminado com sucesso.*
 
@@ -694,7 +694,7 @@ No Workbench:
 3. Em **Workflows**, abra `job_clientes`, a aba **Runs** e os detalhes das tarefas de cada execução.
 4. Em **Master catalog > default > lab_clientes**, confira as tabelas e suas consultas.
 
-![Localização da aba Runs em um job no AIDP](docs/imagens/workflow-execucoes.png)
+![Localização da aba Runs em um job no AIDP](imagens/workflow-execucoes.png)
 
 *O print mostra `Medallion_Workflow`. Abra `job_clientes` no seu workspace e use a aba Runs para conferir os dois run IDs.*
 
@@ -777,8 +777,8 @@ Parar Spark reduz o consumo do compute, mas outros recursos podem continuar cons
 
 ## 10. Ajuda e referências
 
-- **Algo falhou?** Abra [Solução de problemas](docs/solucao-de-problemas.md). Guarde mensagem, etapa e ID da solicitação/execução antes de repetir.
-- **Quer conferir as regras?** Use [Resultados esperados](docs/resultados-esperados.md). Os números foram recalculados localmente sobre o CSV, para comparação com a sua execução no AIDP.
+- **Algo falhou?** Abra [Solução de problemas](solucao-de-problemas.md). Guarde mensagem, etapa e ID da solicitação/execução antes de repetir.
+- **Quer conferir as regras?** Use [Resultados esperados](resultados-esperados.md). Os números foram recalculados localmente sobre o CSV, para comparação com a sua execução no AIDP.
 - **Quer retomar em outro chat?** Abra o mesmo projeto e envie:
 
 ```text
@@ -795,8 +795,8 @@ Agora apenas confirme o entendimento e aguarde.
 python3 scripts/verificar-dados.py
 ```
 
-- **Quer publicar este tutorial?** Siga o [guia para GitHub](docs/publicacao-github.md).
-- **Quer localizar o slide de origem?** Consulte a [conversão dos 50 slides](docs/apresentacao-convertida.md).
+- **Quer publicar este tutorial?** Siga o [guia para GitHub](publicacao-github.md).
+- **Quer localizar o slide de origem?** Consulte a [conversão dos 50 slides](apresentacao-convertida.md).
 
 ### Fontes e versões
 
@@ -811,6 +811,6 @@ Foram conferidos os arquivos, as referências oficiais e os resultados do CSV. A
 - [Oracle: release v1.0.0](https://github.com/oracle/aidataplatform-sdk/releases/tag/v1.0.0)
 - [Oracle: Resource Manager e estrutura Terraform](https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/terraformconfigresourcemanager.htm)
 - [Oracle: API signing keys](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm)
-- [OpenAI: aplicativo](https://learn.chatgpt.com/docs/app)
-- [OpenAI: plugins](https://learn.chatgpt.com/docs/plugins)
-- [Créditos e fontes dos prints](docs/fontes-das-imagens.md)
+- [OpenAI: aplicativo](https://learn.chatgpt.com/app)
+- [OpenAI: plugins](https://learn.chatgpt.com/plugins)
+- [Créditos e fontes dos prints](fontes-das-imagens.md)
